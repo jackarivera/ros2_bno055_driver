@@ -48,7 +48,7 @@ BNO055Driver::BNO055Driver(const std::string & node_name, const rclcpp::NodeOpti
   declare_parameter("diagnostic_period", rclcpp::ParameterValue((rcl_duration_value_t)1));
   declare_parameter("frame_id", "base_imu_link");
   declare_parameter("frequency", rclcpp::ParameterValue(30.0f));
-  declare_parameter("port", rclcpp::ParameterValue("/dev/ttyUSB0"));
+  declare_parameter("port", rclcpp::ParameterValue("/dev/bno-imu"));
   declare_parameter("self_manage", rclcpp::ParameterValue(true));
 
   declare_parameter("use_magnetometer", true);
